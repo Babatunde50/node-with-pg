@@ -1,0 +1,23 @@
+{
+  "name": "social-repo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "migrate": "node-pg-migrate",
+    "start": "nodemon index.js",
+    "migrate:up": "DATABASE_URL=postgres://babatundeololade@localhost:5432/socialnetwork npm run migrate up"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "jest": "^27.5.1",
+    "node-pg-migrate": "^6.2.1",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.3",
+    "pg-format": "^1.0.4",
+    "supertest": "^6.2.2"
+  }
+}
