@@ -6,7 +6,9 @@
   "scripts": {
     "migrate": "node-pg-migrate",
     "start": "nodemon index.js",
-    "migrate:up": "DATABASE_URL=postgres://babatundeololade@localhost:5432/socialnetwork npm run migrate up"
+    "migrate:up": "DATABASE_URL=postgres://babatundeololade@localhost:5432/socialnetwork npm run migrate up",
+    "migrate:up:test": "DATABASE_URL=postgres://babatundeololade@localhost:5432/socialnetwork-test npm run migrate up",
+    "test": "jest --no-cache"
   },
   "keywords": [],
   "author": "",
